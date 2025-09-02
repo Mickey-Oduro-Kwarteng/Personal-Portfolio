@@ -1,0 +1,28 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 170px;
+}
+.services-tite {
+  position: relative;
+}
+.services-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.services-format {
+  display: flex;
+  gap: 20px;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  transition: 0.4s;
+  cursor: pointer;
+}
