@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="projects-title">
-        <h1> My latest work</h1>
+        <h1> My latest Projects</h1>
         <img src={theme_pattern} alt="" />
       </div>
       <div className="projects-container">
