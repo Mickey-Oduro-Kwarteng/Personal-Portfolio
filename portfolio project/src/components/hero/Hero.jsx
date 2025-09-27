@@ -4,7 +4,7 @@ import profile from "../../assets/profile.jpg";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <img src={profile} alt="" />
       <h1>
         <span>I'm Mickey Oduro </span> a Software Engineer based in Ghana
