@@ -36,21 +36,22 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form className="contact-right"></form>
-        <label htmlFor="name">Your Name</label>
-        <input type="text" name="name" placeholder="Your name.." />
-        <label htmlFor="email">Your Email</label>
-        <input type="email" name="email" placeholder="Your email.." />
-        <label htmlFor="">Write your Message here</label>
-        <textarea
-          name="message"
-          rows="8"
-          placeholder="Enter your Message"
-        ></textarea>
-        <button type="submit" className="contact-submit">
-          {" "}
-          Submit Now
-        </button>
+        <form className="contact-right">
+          <label htmlFor="name">Your Name</label>
+          <input type="text" name="name" placeholder="Your name.." />
+          <label htmlFor="email">Your Email</label>
+          <input type="email" name="email" placeholder="Your email.." />
+          <label htmlFor="">Write your Message here</label>
+          <textarea
+            name="message"
+            rows="8"
+            placeholder="Enter your Message"
+          ></textarea>
+          <button type="submit" className="contact-submit">
+            {" "}
+            Submit Now
+          </button>
+        </form>
       </div>
     </div>
   );
