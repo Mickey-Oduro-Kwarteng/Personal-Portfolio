@@ -8,17 +8,22 @@ import menu_close from "../../assets/menu_close.svg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
-  const [isOpen, setIsOpen] = useState(false); // track if sidebar is open
+  const [isOpen, setIsOpen] = useState(false); // ✅ Added this state
+
   const menuRef = useRef();
 
   const openMenu = () => {
     setIsOpen(true);
-    menuRef.current.style.right = "0";
+    if (menuRef.current) {
+      menuRef.current.style.right = "0";
+    }
   };
 
   const closeMenu = () => {
     setIsOpen(false);
-    menuRef.current.style.right = "-350px";
+    if (menuRef.current) {
+      menuRef.current.style.right = "-350px";
+    }
   };
 
   return (
@@ -46,35 +51,35 @@ const Navbar = () => {
           <AnchorLink className="anchor-link" href="#home">
             <p onClick={() => setMenu("home")}>Home</p>
           </AnchorLink>
-          {menu === "home" ? <img src={underline} alt="" /> : null}
+          {menu === "home" && <img src={underline} alt="" />}
         </li>
 
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#about">
             <p onClick={() => setMenu("about")}>About</p>
           </AnchorLink>
-          {menu === "about" ? <img src={underline} alt="" /> : null}
+          {menu === "about" && <img src={underline} alt="" />}
         </li>
 
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#services">
             <p onClick={() => setMenu("services")}>Services</p>
           </AnchorLink>
-          {menu === "services" ? <img src={underline} alt="" /> : null}
+          {menu === "services" && <img src={underline} alt="" />}
         </li>
 
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#contact">
             <p onClick={() => setMenu("contact")}>Contact Me</p>
           </AnchorLink>
-          {menu === "contact" ? <img src={underline} alt="" /> : null}
+          {menu === "contact" && <img src={underline} alt="" />}
         </li>
 
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#projects">
             <p onClick={() => setMenu("projects")}>Projects</p>
           </AnchorLink>
-          {menu === "projects" ? <img src={underline} alt="" /> : null}
+          {menu === "projects" && <img src={underline} alt="" />}
         </li>
       </ul>
 
