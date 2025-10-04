@@ -75,3 +75,12 @@
   transform: scale(1.1);
   transition: 0.3s;
 }
+@media (max-width: 768px) {
+  .Footer {
+    margin: 50px 70px;
+  }
+  .Footer-top {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
