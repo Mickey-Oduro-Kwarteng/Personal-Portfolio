@@ -8,7 +8,8 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profile} alt="" />
       <h1>
-        <span>I'm Mickey Oduro </span> a Software Engineer based in Ghana
+        <span>I'm Mickey Oduro Kwarteng </span> a Software Engineer based in
+        Ghana
       </h1>
       <p>
         A dedicated and results-driven Software Engineer with practical
